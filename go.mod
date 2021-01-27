@@ -1,4 +1,4 @@
-module test3
+module rpcx-example
 
 go 1.15
 
