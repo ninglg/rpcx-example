@@ -26,7 +26,7 @@ func main() {
 	flag.Parse()
 	s := server.NewServer()
 	//s.Register(new(Arith), "")
-	s.RegisterName("Arith", new(Arith), "")
+	_ = s.RegisterName("Arith", new(Arith), "")
 	err := s.Serve("tcp", *addr)
 	if err != nil {
 		panic(err)
